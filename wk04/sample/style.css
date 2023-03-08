@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.circle {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.circle .number {
+  position: absolute;
+  padding-top: 8px;
+  height: 100%;
+  left: 50%;
+  translate: -50%;
+}
+
+.circle .number span {
+  display: block;
+}
+
+.circle .hand {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  background: black;
+  translate: -50%;
+  transform-origin: 50% 100%;
+}
+
+.circle .hand.hour {
+  width: 5px;
+  height: 50px;
+}
+
+.circle .hand.minute {
+  width: 3px;
+  height: 75px;
+}
+
+.circle .hand.second {
+  width: 2px;
+  height: 100px;
+}
+
+input.error {
+  border-color: red;
+}
